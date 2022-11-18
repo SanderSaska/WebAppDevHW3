@@ -1,13 +1,12 @@
 <template>
-  <div class="home">
-    <Header/>
-    <h1>This is main page</h1>
-    <Footer/>
+  <Header/>
+  <div class="signup">
+    <h1>This is signup page</h1>
   </div>
+  <Footer/>
 </template>
 
 <script>
-// @ is an alias to /src
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 
