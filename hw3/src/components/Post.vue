@@ -12,7 +12,7 @@
                 <img v-bind:src="post.img_source" width="200" height="200">
                 <p>{{post.description}}</p>
                 <section class="Likes">
-                    <a class="like"><img src="../assets/Like-Button-Transparent.png" width="25" height="25" alt="Like"></a>
+                    <button v-on:click="AddLike(post)">Like</button>
                     <p>{{post.likes}}</p>
                 </section>
             </article>
@@ -33,6 +33,11 @@ export default {
 computed: {
     postsList(){
         return this.$store.state.postsList
+    }
+},
+methods: {
+    AddLike(post){
+        post.likes += 1;
     }
 }
 }

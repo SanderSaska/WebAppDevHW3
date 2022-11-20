@@ -1,7 +1,6 @@
 import { createStore } from 'vuex'
 
 export default createStore({
-  strict: true,
   state: {
     postsList: [{
       id: 1,
