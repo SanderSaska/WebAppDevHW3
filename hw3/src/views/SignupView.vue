@@ -1,6 +1,6 @@
 <template>
   <Header/>
-  <form @submit.prevent="submitForm" v-if="!formSubmitted">
+  <form class="Signup" @submit.prevent="submitForm" v-if="!formSubmitted">
       <span>Email</span><br>
       <input
         v-model="Email"
@@ -58,12 +58,17 @@ Header {
     padding-left: 20px;
 }
 
-Signup {
+.Signup {
+    display: flex;
+    flex-direction: column;
     color: white;
     background-color: rgb(32, 70, 139);
     border: none;
-    padding: 5px;
+    padding: 20px;
     width: 25%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
