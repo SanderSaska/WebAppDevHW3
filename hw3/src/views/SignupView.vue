@@ -18,3 +18,30 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+Footer {
+    bottom: 0px;
+    width: 99vw;
+    border-radius: 10px;
+    display: flex;
+    background-color: rgb(220, 220, 220);
+    position: fixed;
+    justify-content: center;
+}
+
+Header {
+    border-radius: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+
+</style>

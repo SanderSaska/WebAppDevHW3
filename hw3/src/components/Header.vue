@@ -20,4 +20,15 @@ div {
     background-color: grey;
     flex-direction: column;
 }
+Header {
+    border-radius: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+}
 </style>
