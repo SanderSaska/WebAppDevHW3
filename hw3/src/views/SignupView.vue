@@ -1,8 +1,20 @@
 <template>
   <Header/>
-  <div class="signup">
-    <h1>This is signup page</h1>
-  </div>
+  <form @submit.prevent="submitForm" v-if="!formSubmitted">
+      <span>Email</span><br>
+      <input
+        v-model="Email"
+        type="email"
+        placeholder="Email"
+      /><br>
+      <span>Password</span><br>
+      <input
+        v-model="Password"
+        type="password"
+        placeholder="Password"
+      /><br>
+      <button>Signup</button>
+  </form>
   <Footer/>
 </template>
 

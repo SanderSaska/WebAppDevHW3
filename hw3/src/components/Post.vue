@@ -9,7 +9,7 @@
                     <p>{{post.username}}&ensp;&ensp;&ensp;</p>
                     <p>{{post.date}}</p>
                 </section>
-                <img v-bind:src="post.img_source" width="200" height="200">
+                <img class="image" v-bind:src="post.img_source">
                 <p>{{post.description}}</p>
                 <section class="Likes">
                     <button v-on:click="AddLike(post)">Like</button>
@@ -42,18 +42,3 @@ methods: {
 }
 }
 </script>
-
-<style scoped>
-* {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-p {
-    line-height: 1.25;
-}
-
-::placeholder {
-    color: grey;
-}
-
-</style>
