@@ -22,6 +22,7 @@
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 
+
 export default {
   name: 'HomeView',
   components: {
@@ -29,6 +30,8 @@ export default {
     Footer
   }
 }
+
+
 </script>
 
 <style scoped>
@@ -38,7 +41,7 @@ Footer {
     width: 99vw;
     border-radius: 10px;
     display: flex;
-    background-color: rgb(220, 220, 220);
+    background-color: grey;
     position: fixed;
     justify-content: center;
 }
@@ -53,6 +56,14 @@ Header {
     align-items: center;
     padding: 10px;
     padding-left: 20px;
+}
+
+Signup {
+    color: white;
+    background-color: rgb(32, 70, 139);
+    border: none;
+    padding: 5px;
+    width: 25%;
 }
 
 
