@@ -80,7 +80,6 @@ export default {
   methods: {
     singup() {
       this.clicked += 1
-      console.log(this.$route)
       if (!this.Validation) {
         this.$router.push('/')
       }
