@@ -1,6 +1,8 @@
 <template>
     <div class="footer">
-        <h1>Footer</h1>
+        <span>2022-2022</span>
+        <span>Team AU</span>
+        <span>© Copyright</span>
     </div>
 </template>
 
